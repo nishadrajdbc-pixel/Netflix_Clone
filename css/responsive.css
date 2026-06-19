@@ -1,0 +1,173 @@
+/* =========================
+LARGE LAPTOPS
+========================= */
+
+@media(max-width:1200px){
+
+    .navbar{
+        padding:0 40px;
+    }
+
+    .hero{
+        padding:0 40px;
+    }
+
+    .movie-section{
+        padding:20px 40px;
+    }
+
+    .card{
+        min-width:240px;
+        height:140px;
+    }
+
+}
+
+/* =========================
+LAPTOPS
+========================= */
+
+@media(max-width:992px){
+
+    .hero-content h1{
+        font-size:3.5rem;
+    }
+
+    .hero-content p{
+        max-width:550px;
+    }
+
+    .card{
+        min-width:220px;
+        height:130px;
+    }
+
+}
+
+/* =========================
+TABLETS
+========================= */
+
+@media(max-width:768px){
+
+    /* NAVBAR */
+
+    .nav-links{
+        display:none;
+    }
+
+    .search-box{
+        display:none;
+    }
+
+    .hamburger{
+        display:flex;
+    }
+
+    .navbar{
+        padding:0 20px;
+    }
+
+    /* HERO */
+
+    .hero{
+        padding:0 20px;
+    }
+
+    .hero-content{
+        max-width:90%;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+    }
+
+    .hero-content p{
+        font-size:0.95rem;
+    }
+
+    /* CAROUSEL */
+
+    .movie-section{
+        padding:20px;
+    }
+
+    .card{
+        min-width:200px;
+        height:120px;
+    }
+
+    .scroll-btn{
+        width:45px;
+    }
+
+}
+
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:576px){
+
+    .logo a{
+        font-size:1.6rem;
+    }
+
+    .hero-content h1{
+        font-size:2.4rem;
+    }
+
+    .hero-content p{
+        font-size:0.9rem;
+        line-height:1.6;
+    }
+
+    .hero-buttons{
+        flex-wrap:wrap;
+    }
+
+    .play-btn,
+    .info-btn{
+        padding:10px 20px;
+        font-size:0.9rem;
+    }
+
+    .card{
+        min-width:180px;
+        height:110px;
+    }
+
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:400px){
+
+    .navbar{
+        height:70px;
+    }
+
+    .mobile-menu{
+        top:70px;
+    }
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    .hero-tag{
+        font-size:0.8rem;
+    }
+
+    .card{
+        min-width:160px;
+        height:100px;
+    }
+
+    .movie-section h2{
+        font-size:1.1rem;
+    }
+
+}

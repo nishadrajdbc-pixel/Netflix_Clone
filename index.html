@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Netflix Clone</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            <a href="#hero">NETFLIX</a>
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#tvshows">TV Shows</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#trending">New & Popular</a></li>
+            <li><a href="#mylist">My List</a></li>
+
+        </ul>
+<div class="nav-right">
+
+    <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search movies"
+        >
+    </div>
+
+    <div
+        class="hamburger"
+        id="hamburger"
+    >
+        ☰
+    </div>
+
+</div>
+
+    </nav>
+
+    <!-- MOBILE MENU -->
+
+    <div class="mobile-menu" id="mobileMenu">
+
+        <a href="#hero">Home</a>
+        <a href="#tvshows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#trending">New & Popular</a>
+        <a href="#mylist">My List</a>
+
+    </div>
+
+    <!-- HERO -->
+
+    <section class="hero" id="hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                NETFLIX SERIES
+            </span>
+
+            <h1>STRANGER THINGS</h1>
+
+            <p>
+                When a young boy disappears, a small town uncovers a mystery involving secret experiments,
+                terrifying supernatural forces, and one strange girl.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                    Play
+                </button>
+
+                <button class="info-btn">
+                    <i class="fa-solid fa-circle-info"></i>
+                    More Info
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- MOVIE ROWS GENERATED HERE -->
+
+    <main id="movie-sections">
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            Netflix Clone © 2026
+        </p>
+
+    </footer>
+
+    <!-- JS -->
+
+   <footer class="footer">
+
+    <div class="footer-container">
+
+        <div class="footer-logo">
+            NETFLIX
+        </div>
+
+        <div class="footer-links">
+
+            <a href="#">FAQ</a>
+            <a href="#">Help Center</a>
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Jobs</a>
+            <a href="#">Contact Us</a>
+
+        </div>
+
+        <p class="footer-text">
+            Netflix Clone Project • Built using HTML, CSS and JavaScript
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/movies.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

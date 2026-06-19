@@ -1,0 +1,292 @@
+/* =========================
+NAVBAR
+========================= */
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    padding:0 60px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    z-index:1000;
+
+    background:transparent;
+
+    transition:0.3s ease;
+
+}
+
+/* Added by JS on scroll */
+
+.navbar.scrolled{
+
+    background:#000;
+
+    box-shadow:0 2px 15px rgba(0,0,0,0.6);
+
+}
+
+/* =========================
+LOGO
+========================= */
+
+.logo a{
+
+    color:#e50914;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+/* =========================
+NAV LINKS
+========================= */
+
+.nav-links{
+
+    display:flex;
+
+    gap:25px;
+
+    align-items:center;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    font-size:0.95rem;
+
+    transition:0.3s;
+
+}
+
+.nav-links a:hover{
+
+    color:#b3b3b3;
+
+}
+
+/* =========================
+RIGHT SECTION
+========================= */
+
+.nav-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+/* =========================
+SEARCH BOX
+========================= */
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:rgba(255,255,255,0.1);
+
+    padding:8px 12px;
+
+    border-radius:4px;
+
+}
+
+.search-box i{
+
+    color:white;
+
+}
+
+.search-box input{
+
+    background:none;
+
+    border:none;
+
+    outline:none;
+
+    color:white;
+
+    width:150px;
+
+}
+
+.search-box input::placeholder{
+
+    color:#ccc;
+
+}
+
+/* =========================
+PROFILE
+========================= */
+
+.profile{
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+.profile img{
+
+    width:40px;
+
+    height:40px;
+
+    border-radius:4px;
+
+}
+
+/* =========================
+DROPDOWN
+========================= */
+
+.dropdown{
+
+    position:absolute;
+
+    right:0;
+
+    top:55px;
+
+    width:150px;
+
+    background:#181818;
+
+    border-radius:4px;
+
+    overflow:hidden;
+
+    display:none;
+
+}
+
+.dropdown p{
+
+    padding:12px 15px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+
+}
+
+.dropdown p:hover{
+
+    background:#333;
+
+}
+
+.profile:hover .dropdown{
+
+    display:block;
+
+}
+
+/* =========================
+HAMBURGER
+========================= */
+
+.hamburger{
+
+    display:none;
+
+    flex-direction:column;
+
+    gap:5px;
+
+    cursor:pointer;
+
+}
+
+.hamburger span{
+
+    width:25px;
+
+    height:3px;
+
+    background:white;
+
+    border-radius:10px;
+
+}
+
+/* =========================
+MOBILE MENU
+========================= */
+
+.mobile-menu{
+
+    position:fixed;
+
+    top:80px;
+
+    left:0;
+
+    width:100%;
+
+    background:#000;
+
+    display:flex;
+
+    flex-direction:column;
+
+    overflow:hidden;
+
+    max-height:0;
+
+    transition:0.3s ease;
+
+    z-index:999;
+
+}
+
+.mobile-menu.show{
+
+    max-height:400px;
+
+}
+
+.mobile-menu a{
+
+    padding:16px 24px;
+
+    border-bottom:1px solid rgba(255,255,255,0.1);
+
+}
+
+.mobile-menu a:hover{
+
+    background:#111;
+
+}

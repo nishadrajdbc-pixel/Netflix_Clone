@@ -1,0 +1,128 @@
+/* =========================
+GLOBAL RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#141414;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* =========================
+ROOT VARIABLES
+========================= */
+
+:root{
+
+    --netflix-red:#e50914;
+
+    --black:#000000;
+
+    --dark:#141414;
+
+    --gray:#808080;
+
+    --light-gray:#b3b3b3;
+
+    --white:#ffffff;
+
+}
+
+/* =========================
+COMMON BUTTONS
+========================= */
+
+button{
+    border:none;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    opacity:0.9;
+}
+
+/* =========================
+LINKS
+========================= */
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+/* =========================
+LISTS
+========================= */
+
+ul{
+    list-style:none;
+}
+
+/* =========================
+IMAGES
+========================= */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =========================
+MAIN CONTENT
+========================= */
+
+main{
+    position:relative;
+    z-index:2;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer{
+
+    margin-top:60px;
+
+    padding:30px;
+
+    text-align:center;
+
+    color:var(--light-gray);
+
+    border-top:1px solid rgba(255,255,255,0.1);
+
+}
+
+/* =========================
+SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#333;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#555;
+}
