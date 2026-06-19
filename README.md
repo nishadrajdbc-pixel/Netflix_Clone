@@ -118,7 +118,11 @@ The application is optimized for:
 
 ## 📸 Screenshots
 
-Add screenshots of your project here.
+<img width="2560" height="1118" alt="Screenshot 2026-06-19 235117" src="https://github.com/user-attachments/assets/deeb0145-d942-4071-b3f4-acfd2e0f8444" />
+
+
+<img width="2560" height="1316" alt="image" src="https://github.com/user-attachments/assets/4d3f5fb7-f885-4f10-9987-84fc70d2daaa" />
+
 
 ---
 
