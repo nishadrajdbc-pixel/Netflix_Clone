@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     createMovieSections();
 
-    initializeCarousel();
-
     initializeNavbar();
 
     initializeSearch();
@@ -62,47 +60,27 @@ HERO SLIDER
 
 function initializeHeroSlider() {
 
-    const hero =
-        document.querySelector(".hero");
+    const hero = document.querySelector(".hero[data-slider=\"true\"]");
+    const heroTitle = document.querySelector(".hero-content h1");
+    const heroDescription = document.querySelector(".hero-content p");
 
-    const heroTitle =
-        document.querySelector(".hero-content h1");
-
-    const heroDescription =
-        document.querySelector(".hero-content p");
-
-    if (!hero) return;
+    if (!hero || !heroTitle || !heroDescription) return;
 
     let currentSlide = 0;
 
     function updateSlide() {
-
-        const slide =
-            heroSlides[currentSlide];
-
-        hero.style.backgroundImage =
-            `url(${slide.image})`;
-
-        heroTitle.textContent =
-            slide.title;
-
-        heroDescription.textContent =
-            slide.description;
-
+        const slide = heroSlides[currentSlide];
+        hero.style.backgroundImage = `url(${slide.image})`;
+        heroTitle.textContent = slide.title;
+        heroDescription.textContent = slide.description;
         currentSlide++;
-
         if (currentSlide >= heroSlides.length) {
-
             currentSlide = 0;
-
         }
-
     }
 
     updateSlide();
-
     setInterval(updateSlide, 5000);
-
 }
 
 /* =========================

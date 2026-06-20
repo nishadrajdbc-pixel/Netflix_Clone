@@ -44,6 +44,18 @@ LAPTOPS
 
 }
 
+/* Remove the left offset on narrower screens so hero centers correctly */
+@media(max-width:992px){
+    .hero{
+        padding:120px 40px 40px;
+    }
+    .hero-content{
+        margin-left:0;
+        max-width:90%;
+        padding-top:0;
+    }
+}
+
 /* =========================
 TABLETS
 ========================= */
@@ -71,11 +83,12 @@ TABLETS
     /* HERO */
 
     .hero{
-        padding:0 20px;
+        padding:120px 20px 40px;
     }
 
     .hero-content{
         max-width:90%;
+        margin-left:0;
     }
 
     .hero-content h1{

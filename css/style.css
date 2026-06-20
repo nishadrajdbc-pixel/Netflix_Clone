@@ -14,9 +14,11 @@ html{
 }
 
 body{
-    background:#141414;
+    background:#090909;
     color:white;
     overflow-x:hidden;
+    /* keep body padding equal to navbar height so there is no gap below the fixed nav */
+    padding-top:80px;
 }
 
 /* =========================
@@ -92,17 +94,99 @@ main{
 FOOTER
 ========================= */
 
-footer{
+/* =========================
+FOOTER
+========================= */
 
-    margin-top:60px;
+.footer{
+    background:#111;
+    color:#757575;
+    padding:70px 0 40px;
+    margin-top:70px;
+}
 
-    padding:30px;
+.footer-container{
+    max-width:1000px;
+    margin:0 auto;
+    padding:0 40px;
+}
 
-    text-align:center;
+.social-icons{
+    display:flex;
+    gap:25px;
+    margin-bottom:35px;
+}
 
-    color:var(--light-gray);
+.social-icons a{
+    color:#fff;
+    font-size:1.6rem;
+    transition:.3s;
+}
 
-    border-top:1px solid rgba(255,255,255,0.1);
+.social-icons a:hover{
+    color:#e50914;
+}
+
+.footer-links{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px;
+}
+
+.footer-column{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.footer-column a{
+    color:#757575;
+    text-decoration:none;
+    font-size:0.9rem;
+    transition:.3s;
+}
+
+.footer-column a:hover{
+    color:#fff;
+    text-decoration:underline;
+}
+
+.copyright{
+    margin-top:45px;
+    font-size:0.85rem;
+    color:#757575;
+}
+
+/* =========================
+RESPONSIVE FOOTER
+========================= */
+
+@media(max-width:768px){
+
+    .footer-links{
+        grid-template-columns:repeat(2,1fr);
+        gap:25px;
+    }
+
+    .social-icons{
+        justify-content:center;
+    }
+
+    .copyright{
+        text-align:center;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .footer-links{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        padding:0 25px;
+    }
 
 }
 

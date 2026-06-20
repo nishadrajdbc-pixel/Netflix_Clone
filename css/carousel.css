@@ -217,10 +217,24 @@ MOVIE CONTAINER
 
 #movie-sections{
 
-    margin-top:-100px;
+    /* ensure movie sections flow after the hero, avoid pulling them upward */
+    margin-top:0;
 
     position:relative;
 
     z-index:5;
 
+    background:#060606;
+    padding-bottom:80px;
+
+}
+
+.movie-section{
+    /* add extra spacing between rows to avoid visual collisions during scroll */
+    margin:40px 60px;
+    padding:30px 40px;
+    background:rgba(0,0,0,0.55);
+    border-radius:22px;
+    backdrop-filter: blur(12px);
+    box-shadow:0 24px 70px rgba(0,0,0,0.35);
 }

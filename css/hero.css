@@ -8,46 +8,29 @@ HERO SECTION
 
     width:100%;
 
-    height:100vh;
+    min-height:calc(100vh - 80px);
 
     display:flex;
 
-    align-items:center;
+    align-items:flex-start;
 
-    padding:0 60px;
+    justify-content:flex-start;
 
+    padding:90px 40px 60px;
+
+    /* create a local stacking context so hero elements don't bleed into other sections */
+    z-index:20;
+    transform:translateZ(0);
     background-image:
-    url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1920&q=80");
-
+        linear-gradient(
+            rgba(0,0,0,0.94),
+            rgba(0,0,0,0.70)
+        ),
+        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1920&q=80");
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
-}
-
-/* =========================
-OVERLAY
-========================= */
-
-.hero-overlay{
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    linear-gradient(
-        to right,
-        rgba(0,0,0,0.9),
-        rgba(0,0,0,0.3)
-    ),
-    linear-gradient(
-        to top,
-        #141414,
-        transparent
-    );
+    box-shadow: inset 0 120px 180px rgba(0,0,0,0.55);
 
 }
 
@@ -59,10 +42,17 @@ CONTENT
 
     position:relative;
 
-    z-index:2;
+    z-index:3;
 
     max-width:650px;
 
+}
+
+/* left-align hero content for section pages */
+.hero-content{
+    margin-left:35px;
+    padding-top:30px;
+    max-width:720px;
 }
 
 /* =========================
@@ -198,4 +188,12 @@ HERO SLIDER TRANSITION
 .hero{
     transition:
     background-image 1s ease-in-out;
+}
+
+.page-banner{
+    min-height:calc(100vh - 80px);
+    display:flex;
+    align-items:flex-end;
+    padding:180px 60px 40px;
+    color:#ffffff;
 }

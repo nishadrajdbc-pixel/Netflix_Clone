@@ -23,7 +23,7 @@ NAVBAR
 
     z-index:1000;
 
-    background:transparent;
+    background:rgba(0,0,0,0.88);
 
     transition:0.3s ease;
 
@@ -47,11 +47,19 @@ LOGO
 
     color:#e50914;
 
-    font-size:2rem;
+    font-size:1.9rem;
 
     font-weight:700;
 
     letter-spacing:1px;
+
+    /* Make the logo fit the navbar height exactly to avoid overlap */
+    display:inline-block;
+    height:80px;
+    line-height:80px;
+    vertical-align:middle;
+    padding:0 6px;
+    box-sizing:border-box;
 
 }
 

@@ -1,39 +1,21 @@
-function initializeCarousel() {
+document.addEventListener("click",(e)=>{
 
-    document.addEventListener("click", function(event) {
+if(e.target.classList.contains("left")){
 
-        if (event.target.classList.contains("left")) {
+const carousel =
+e.target.parentElement.querySelector(".carousel");
 
-            const carousel =
-                event.target.parentElement.querySelector(".carousel");
-
-            if (carousel) {
-
-                carousel.scrollBy({
-                    left: -800,
-                    behavior: "smooth"
-                });
-
-            }
-
-        }
-
-        if (event.target.classList.contains("right")) {
-
-            const carousel =
-                event.target.parentElement.querySelector(".carousel");
-
-            if (carousel) {
-
-                carousel.scrollBy({
-                    left: 800,
-                    behavior: "smooth"
-                });
-
-            }
-
-        }
-
-    });
+carousel.scrollLeft -= 700;
 
 }
+
+if(e.target.classList.contains("right")){
+
+const carousel =
+e.target.parentElement.querySelector(".carousel");
+
+carousel.scrollLeft += 700;
+
+}
+
+});
