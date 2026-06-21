@@ -184,3 +184,99 @@ SMALL MOBILE
     }
 
 }
+
+@media (max-width: 768px){
+
+    .navbar{
+        height:70px;
+        padding:0 16px;
+    }
+
+    .logo a{
+        font-size:2rem;
+        line-height:70px;
+        height:70px;
+    }
+
+    .mobile-menu{
+        top:70px;
+    }
+
+    .hero{
+        min-height:100vh;
+        padding:100px 20px 40px;
+        background-position:center center;
+        background-size:cover;
+    }
+
+    .hero-content{
+        width:100%;
+        max-width:100%;
+    }
+
+    .hero-content h1{
+        font-size:3rem;
+        line-height:1.1;
+    }
+
+    .hero-content p{
+        width:100%;
+        font-size:1rem;
+    }
+
+    .hero-buttons{
+        display:flex;
+        gap:10px;
+        flex-wrap:wrap;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero{
+
+        min-height:100vh;
+        padding:120px 20px 60px;
+
+        background-position:center;
+        background-size:cover;
+
+    }
+
+    .hero-content{
+
+        width:100%;
+        max-width:100%;
+
+    }
+
+    .hero-content h1{
+
+        font-size:3rem;
+        line-height:1.1;
+
+    }
+
+    .hero-content p{
+
+        width:100%;
+        font-size:1rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-wrap:wrap;
+        gap:12px;
+
+    }
+
+    .play-btn,
+    .info-btn{
+
+        padding:12px 20px;
+
+    }
+
+}

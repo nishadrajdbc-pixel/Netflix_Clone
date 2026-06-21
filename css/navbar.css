@@ -235,6 +235,16 @@ HAMBURGER
 
     cursor:pointer;
 
+    z-index:2001;
+
+    position:relative;
+
+    color:white;
+
+    font-size:32px;
+
+    user-select:none;
+
 }
 
 .hamburger span{
@@ -273,9 +283,9 @@ MOBILE MENU
 
     max-height:0;
 
-    transition:0.3s ease;
+    transition:all 0.3s ease;
 
-    z-index:999;
+    z-index:2000;
 
 }
 
@@ -296,5 +306,91 @@ MOBILE MENU
 .mobile-menu a:hover{
 
     background:#111;
+
+}
+
+/* =========================
+MOBILE RESPONSIVE NAVBAR
+========================= */
+
+@media screen and (max-width: 768px){
+
+    .navbar{
+
+        padding:0 20px;
+
+        height:70px;
+
+    }
+
+    .logo a{
+
+        font-size:2rem;
+
+        height:70px;
+
+        line-height:70px;
+
+    }
+
+    .nav-links{
+
+        display:none;
+
+    }
+
+    .search-box{
+
+        display:none;
+
+    }
+
+    .hamburger{
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
+        font-size:32px;
+
+        color:white;
+
+        cursor:pointer;
+
+        z-index:9999;
+
+        position:relative;
+
+    }
+
+    .mobile-menu{
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        background:#000;
+
+        z-index:9998;
+
+    }
+
+    .mobile-menu a{
+
+        color:white;
+
+        text-decoration:none;
+
+        padding:18px 24px;
+
+        display:block;
+
+        font-size:1rem;
+
+    }
 
 }
