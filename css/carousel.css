@@ -1,12 +1,36 @@
 /* =========================
-MOVIE SECTIONS
+MOVIE CONTAINER
+========================= */
+
+#movie-sections{
+
+    position:relative;
+
+    z-index:5;
+
+    background:#060606;
+
+    padding-bottom:80px;
+
+}
+
+/* =========================
+MOVIE SECTION
 ========================= */
 
 .movie-section{
 
-    padding:20px 60px;
+    margin:40px 60px;
 
-    margin-top:10px;
+    padding:30px 40px;
+
+    background:rgba(0,0,0,0.55);
+
+    border-radius:20px;
+
+    backdrop-filter:blur(12px);
+
+    box-shadow:0 20px 60px rgba(0,0,0,0.35);
 
 }
 
@@ -14,9 +38,9 @@ MOVIE SECTIONS
 
     font-size:1.4rem;
 
-    margin-bottom:15px;
-
     font-weight:600;
+
+    margin-bottom:20px;
 
 }
 
@@ -38,7 +62,7 @@ CAROUSEL
 
     display:flex;
 
-    gap:10px;
+    gap:12px;
 
     overflow-x:auto;
 
@@ -64,9 +88,11 @@ MOVIE CARD
 
     min-width:260px;
 
+    width:260px;
+
     height:150px;
 
-    border-radius:6px;
+    border-radius:8px;
 
     overflow:hidden;
 
@@ -75,6 +101,8 @@ MOVIE CARD
     transition:0.3s ease;
 
     flex-shrink:0;
+
+    background:#111;
 
 }
 
@@ -94,17 +122,17 @@ NETFLIX HOVER EFFECT
 
 .card:hover{
 
-    transform:scale(1.12);
+    transform:scale(1.08);
 
     z-index:20;
 
     box-shadow:
-    0 10px 30px rgba(0,0,0,0.8);
+        0 12px 30px rgba(0,0,0,0.8);
 
 }
 
 /* =========================
-MOVIE TITLE OVERLAY
+MOVIE TITLE
 ========================= */
 
 .movie-title{
@@ -120,10 +148,10 @@ MOVIE TITLE OVERLAY
     padding:12px;
 
     background:
-    linear-gradient(
-        transparent,
-        rgba(0,0,0,0.95)
-    );
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,0.95)
+        );
 
     font-size:0.9rem;
 
@@ -161,8 +189,7 @@ SCROLL BUTTONS
 
     font-size:2rem;
 
-    background:
-    rgba(0,0,0,0.6);
+    background:rgba(0,0,0,0.6);
 
     cursor:pointer;
 
@@ -180,19 +207,11 @@ SCROLL BUTTONS
 
 }
 
-/* =========================
-LEFT BUTTON
-========================= */
-
 .left{
 
     left:0;
 
 }
-
-/* =========================
-RIGHT BUTTON
-========================= */
 
 .right{
 
@@ -200,41 +219,116 @@ RIGHT BUTTON
 
 }
 
-/* =========================
-BUTTON HOVER
-========================= */
-
 .scroll-btn:hover{
 
-    background:
-    rgba(0,0,0,0.9);
+    background:rgba(0,0,0,0.9);
 
 }
 
 /* =========================
-MOVIE CONTAINER
+TABLET
 ========================= */
 
-#movie-sections{
+@media(max-width:992px){
 
-    /* ensure movie sections flow after the hero, avoid pulling them upward */
-    margin-top:0;
+    .movie-section{
 
-    position:relative;
+        margin:30px 30px;
 
-    z-index:5;
+        padding:25px;
 
-    background:#060606;
-    padding-bottom:80px;
+    }
+
+    .card{
+
+        min-width:220px;
+
+        width:220px;
+
+        height:130px;
+
+    }
 
 }
 
-.movie-section{
-    /* add extra spacing between rows to avoid visual collisions during scroll */
-    margin:40px 60px;
-    padding:30px 40px;
-    background:rgba(0,0,0,0.55);
-    border-radius:22px;
-    backdrop-filter: blur(12px);
-    box-shadow:0 24px 70px rgba(0,0,0,0.35);
+/* =========================
+MOBILE
+========================= */
+
+@media(max-width:768px){
+
+    .movie-section{
+
+        margin:20px 15px;
+
+        padding:20px 15px;
+
+        border-radius:15px;
+
+    }
+
+    .movie-section h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .card{
+
+        min-width:180px;
+
+        width:180px;
+
+        height:110px;
+
+    }
+
+    .movie-title{
+
+        opacity:1;
+
+        font-size:0.8rem;
+
+    }
+
+    .scroll-btn{
+
+        width:45px;
+
+        opacity:1;
+
+    }
+
+}
+
+/* =========================
+SMALL MOBILE
+========================= */
+
+@media(max-width:400px){
+
+    .movie-section{
+
+        margin:15px 10px;
+
+        padding:15px 10px;
+
+    }
+
+    .movie-section h2{
+
+        font-size:1rem;
+
+    }
+
+    .card{
+
+        min-width:160px;
+
+        width:160px;
+
+        height:100px;
+
+    }
+
 }

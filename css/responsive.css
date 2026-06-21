@@ -60,7 +60,12 @@ LAPTOPS
 TABLETS
 ========================= */
 
-@media(max-width:768px){
+
+/* =========================
+FINAL MOBILE OPTIMIZATION
+========================= */
+
+@media screen and (max-width:768px){
 
     /* NAVBAR */
 
@@ -77,77 +82,79 @@ TABLETS
     }
 
     .navbar{
-        padding:0 20px;
+        height:70px;
+        padding:0 15px;
+    }
+
+    .logo a{
+        font-size:1.8rem;
+        line-height:70px;
+        height:70px;
+    }
+
+    .mobile-menu{
+        top:70px;
     }
 
     /* HERO */
 
     .hero{
-        padding:120px 20px 40px;
+        min-height:100vh;
+        padding:110px 20px 50px;
+        background-position:center center;
+        background-size:cover;
     }
 
     .hero-content{
-        max-width:90%;
+        width:100%;
+        max-width:100%;
         margin-left:0;
     }
 
+    .hero-tag{
+        font-size:0.8rem;
+        letter-spacing:2px;
+    }
+
     .hero-content h1{
-        font-size:3rem;
+        font-size:2.5rem;
+        line-height:1.1;
+        margin-bottom:15px;
     }
 
     .hero-content p{
+        width:100%;
+        max-width:100%;
         font-size:0.95rem;
+        line-height:1.6;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .play-btn,
+    .info-btn{
+        padding:12px 20px;
+        font-size:0.9rem;
     }
 
     /* CAROUSEL */
 
     .movie-section{
-        padding:20px;
-    }
-
-    .card{
-        min-width:200px;
-        height:120px;
-    }
-
-    .scroll-btn{
-        width:45px;
-    }
-
-}
-
-/* =========================
-MOBILE
-========================= */
-
-@media(max-width:576px){
-
-    .logo a{
-        font-size:1.6rem;
-    }
-
-    .hero-content h1{
-        font-size:2.4rem;
-    }
-
-    .hero-content p{
-        font-size:0.9rem;
-        line-height:1.6;
-    }
-
-    .hero-buttons{
-        flex-wrap:wrap;
-    }
-
-    .play-btn,
-    .info-btn{
-        padding:10px 20px;
-        font-size:0.9rem;
+        padding:20px 15px;
     }
 
     .card{
         min-width:180px;
+        width:180px;
         height:110px;
+    }
+
+    .scroll-btn{
+        width:45px;
     }
 
 }
@@ -158,125 +165,14 @@ SMALL MOBILE
 
 @media(max-width:400px){
 
-    .navbar{
-        height:70px;
-    }
-
-    .mobile-menu{
-        top:70px;
-    }
-
     .hero-content h1{
         font-size:2rem;
-    }
-
-    .hero-tag{
-        font-size:0.8rem;
     }
 
     .card{
         min-width:160px;
+        width:160px;
         height:100px;
-    }
-
-    .movie-section h2{
-        font-size:1.1rem;
-    }
-
-}
-
-@media (max-width: 768px){
-
-    .navbar{
-        height:70px;
-        padding:0 16px;
-    }
-
-    .logo a{
-        font-size:2rem;
-        line-height:70px;
-        height:70px;
-    }
-
-    .mobile-menu{
-        top:70px;
-    }
-
-    .hero{
-        min-height:100vh;
-        padding:100px 20px 40px;
-        background-position:center center;
-        background-size:cover;
-    }
-
-    .hero-content{
-        width:100%;
-        max-width:100%;
-    }
-
-    .hero-content h1{
-        font-size:3rem;
-        line-height:1.1;
-    }
-
-    .hero-content p{
-        width:100%;
-        font-size:1rem;
-    }
-
-    .hero-buttons{
-        display:flex;
-        gap:10px;
-        flex-wrap:wrap;
-    }
-
-}
-
-@media (max-width:768px){
-
-    .hero{
-
-        min-height:100vh;
-        padding:120px 20px 60px;
-
-        background-position:center;
-        background-size:cover;
-
-    }
-
-    .hero-content{
-
-        width:100%;
-        max-width:100%;
-
-    }
-
-    .hero-content h1{
-
-        font-size:3rem;
-        line-height:1.1;
-
-    }
-
-    .hero-content p{
-
-        width:100%;
-        font-size:1rem;
-
-    }
-
-    .hero-buttons{
-
-        flex-wrap:wrap;
-        gap:12px;
-
-    }
-
-    .play-btn,
-    .info-btn{
-
-        padding:12px 20px;
-
     }
 
 }
